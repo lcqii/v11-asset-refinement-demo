@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A Codex-assisted V11 workflow demo for inspecting neutral 3D geometry and exporting editable assets.">
+  <title>V11 — Asset Refinement</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="./" aria-label="V11 Asset Refinement home"><span class="symbol">V11</span><span>ASSET REFINEMENT</span></a>
+    <div class="edition">NEUTRAL GEOMETRY DEMO <span>01 / 2026</span></div>
+    <a class="source-link" href="https://github.com/lcqii/v11-asset-refinement-demo" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div><p class="eyebrow"><span class="dot"></span> BUILT WITH CODEX · V11</p><h1>From scene to<br><em>editable assets.</em></h1></div>
+      <div class="intro-copy"><p>Explore an authored 3D scene, inspect each asset in context, and export geometry you can edit.</p><p class="zh" lang="zh-CN">逐资产检查结构，单独查看，导出可编辑网格。</p><div class="facts"><span><b id="group-count">28</b> asset groups</span><span>GLB export</span><span>Geometry only</span></div></div>
+    </section>
+
+    <section class="workspace" aria-label="Interactive 3D asset inspector">
+      <aside class="asset-panel">
+        <div class="panel-heading"><h2>Asset library</h2><span id="result-count">28</span></div>
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find an asset…" aria-label="Search assets"></label>
+        <button class="overview selected" id="all-assets" aria-pressed="true"><span class="list-icon">▦</span><span>Complete scene<small>All assets in context</small></span><span class="arrow">↗</span></button>
+        <div id="asset-list" class="asset-list" aria-label="Assets"></div>
+        <div class="panel-foot"><span class="dot"></span> No source photographs or textures</div>
+      </aside>
+
+      <div class="stage-area">
+        <div class="stage-toolbar"><div class="view-tabs" aria-label="Viewpoints"><button id="view-overview" class="active" aria-pressed="true">Overview</button><button id="view-aisle" aria-pressed="false">Aisle</button><button id="view-side" aria-pressed="false">Side</button></div><button id="wireframe" class="text-button" aria-pressed="false">Wireframe</button></div>
+        <div id="viewport" role="region" aria-label="3D scene. Drag to rotate, scroll to zoom, right-drag to pan. Select an asset from the library or click the scene.">
+          <div id="loading" role="status"><div class="loader"></div><b>Opening V11 geometry</b><span id="load-progress">Loading the 43 MB model…</span></div>
+          <div class="scene-label"><span class="dot"></span><span id="scene-label">COMPLETE SCENE</span></div>
+          <div class="stage-help">Drag to orbit <span>·</span> Scroll to zoom <span>·</span> Right-drag to pan</div>
+          <div class="orientation" aria-hidden="true">Y <span>↑</span><small>3D</small></div>
+        </div>
+        <div class="selection-bar">
+          <div><p class="eyebrow" id="selection-kind">SCENE OVERVIEW</p><h3 id="selection-title">28 assets, one editable scene</h3><p id="selection-description">Select an asset to inspect its structure and export it.</p></div>
+          <div class="selection-actions"><button id="focus" disabled>Focus</button><button id="isolate" disabled aria-pressed="false">Isolate</button><button id="export" class="primary" disabled>Export asset <span aria-hidden="true">↓</span></button></div>
+        </div>
+        <div id="status" class="status" role="status" aria-live="polite">Preparing the model…</div>
+      </div>
+    </section>
+
+    <section class="workflow" aria-label="How to use this demo">
+      <div class="workflow-title"><p class="eyebrow">A SMALL, COMPLETE WORKFLOW</p><h2>Inspect. Refine. Reuse.</h2><a href="./assets/v11-neutral.glb" download>Download complete GLB <span aria-hidden="true">↓</span></a></div>
+      <article><span class="step">01</span><h3>Start with context</h3><p>Orbit the complete scene. Choose a viewpoint to understand where an asset sits.</p></article>
+      <article><span class="step">02</span><h3>Inspect one asset</h3><p>Select from the library, focus the camera, and isolate geometry for a closer look.</p></article>
+      <article><span class="step">03</span><h3>Continue editing</h3><p>Export the selected group as a GLB and open it in Blender or another glTF editor.</p></article>
+    </section>
+    <footer><p>Authored geometry; hidden surfaces and dimensions include estimates. This is a workflow demonstration, not a surveyed model or inventory record.</p><a href="./README.md">Project notes ↗</a></footer>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

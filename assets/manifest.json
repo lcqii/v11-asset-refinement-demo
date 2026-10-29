@@ -1,0 +1,122 @@
+{
+  "title": "V11 Asset Refinement",
+  "release": "neutral geometry demo",
+  "groups": [
+    {
+      "id": "asset-01",
+      "label": "Island shelf 01"
+    },
+    {
+      "id": "asset-02",
+      "label": "Island shelf 02"
+    },
+    {
+      "id": "asset-03",
+      "label": "Island shelf 03"
+    },
+    {
+      "id": "asset-04",
+      "label": "Wall shelf 01"
+    },
+    {
+      "id": "asset-05",
+      "label": "Hanging display"
+    },
+    {
+      "id": "asset-06",
+      "label": "Display cabinet"
+    },
+    {
+      "id": "asset-07",
+      "label": "Island shelf 04"
+    },
+    {
+      "id": "asset-08",
+      "label": "Wall shelf 02"
+    },
+    {
+      "id": "asset-09",
+      "label": "Side shelf"
+    },
+    {
+      "id": "asset-10",
+      "label": "Wall shelf 03"
+    },
+    {
+      "id": "asset-11",
+      "label": "Upright cabinet 01"
+    },
+    {
+      "id": "asset-12",
+      "label": "Upright cabinet 02"
+    },
+    {
+      "id": "asset-13",
+      "label": "Counter"
+    },
+    {
+      "id": "asset-14",
+      "label": "Chair"
+    },
+    {
+      "id": "asset-15",
+      "label": "Utility group"
+    },
+    {
+      "id": "asset-16",
+      "label": "Box stack"
+    },
+    {
+      "id": "asset-17",
+      "label": "Floor and structure"
+    },
+    {
+      "id": "asset-18",
+      "label": "Entry frame"
+    },
+    {
+      "id": "asset-19",
+      "label": "Side display"
+    },
+    {
+      "id": "asset-20",
+      "label": "Upright cabinet 03"
+    },
+    {
+      "id": "asset-21",
+      "label": "Upright cabinet 04"
+    },
+    {
+      "id": "asset-22",
+      "label": "Low cabinet 01"
+    },
+    {
+      "id": "asset-23",
+      "label": "Column"
+    },
+    {
+      "id": "asset-24",
+      "label": "Low cabinet 02"
+    },
+    {
+      "id": "asset-25",
+      "label": "Floor boxes"
+    },
+    {
+      "id": "asset-26",
+      "label": "Case group 01"
+    },
+    {
+      "id": "asset-27",
+      "label": "Case group 02"
+    },
+    {
+      "id": "asset-28",
+      "label": "Display group"
+    }
+  ],
+  "meshCount": 2584,
+  "partCount": 2593,
+  "geometryBytes": 42973004,
+  "limitations": "Authored geometry with inferred hidden surfaces and approximate dimensions. This demo is not a surveyed model or inventory record."
+}
