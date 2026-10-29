@@ -2,6 +2,8 @@
 
 A Codex-assisted workflow for turning an authored 3D scene into inspectable, editable asset groups.
 
+**[Open the live demo](https://lcqii.github.io/v11-asset-refinement-demo/)** · [中文教程](docs/README.zh-CN.md)
+
 ![V11 neutral geometry viewer](docs/overview.jpg)
 
 **28 asset groups · interactive inspection · individual GLB export · no build step**
